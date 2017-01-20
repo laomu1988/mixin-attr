@@ -1,5 +1,5 @@
 {
-  "name": "mixin-object",
+  "name": "mixin-attr",
   "version": "1.0.0",
   "description": "mixin object",
   "main": "index.js",
@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/laomu1988/mixin-object.git"
+    "url": "https://github.com/laomu1988/mixin-attr.git"
   },
   "bugs": {
-    "url": "https://github.com/laomu1988/mixin-object/issues"
+    "url": "https://github.com/laomu1988/mixin-attr/issues"
   },
   "author": "laomu1988@qq.com",
   "license": "MIT",

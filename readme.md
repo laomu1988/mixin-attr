@@ -4,19 +4,33 @@
 
 ## install
 ```
-npm install mixin-object --save
+npm install mixin-attr --save
 ```
 
 ## usage
 ```
-var mixin = require('mixin-object');
+var mixin = require('mixin-attr');
 
-var target = mixin(
+var target1 = mixin(
     {a: {b: 1}},
     {a: {c: 1}}
 );
 
-console.log(JSON.stringify(target));
+console.log(JSON.stringify(target1));
 // 将输出: {"a":{"b":1,"c":1}}
 
+
+var target2 = mixin(
+    {a: {b: 1}},
+    {"a.c":1}  // 当属性中带有.时,将会自动展开
+);
+console.log(JSON.stringify(target2));
+// 将输出: {"a":{"b":1,"c":1}}
+
+```
+
+
+## test
+```
+npm run test
 ```
